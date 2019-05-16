@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import './App.css';
-import Axios from 'axios'
+import "./App.css";
+import Axios from "axios";
+import { Container } from "react-bootstrap";
+import Nav from "./components/sections/Nav";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Account from "./pages/Account";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -40,17 +45,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          {this.state.messages.map((message, index) => (
-            <div>
-              <p>title : {message.title}</p>
-              <p>text : {message.text}</p>
-              <hr />
-            </div>
-          ))}
-        </div>
+        <BrowserRouter>
+        <Nav />
+          <Container>
+            
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/account" component={Account} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </Container>
+        </BrowserRouter>
       </div>
-    )
+    );
   }
 }
 
