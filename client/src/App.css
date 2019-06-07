@@ -23,3 +23,13 @@
   bottom: 50px;
   font-weight: 600;
 }
+
+.card-text {
+}
+
+.rating-label {
+  position: absolute;
+  bottom: 80px;
+}
+
+
