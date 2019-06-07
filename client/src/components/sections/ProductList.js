@@ -5,6 +5,16 @@ export default ({ products }) => {
   return (
     <Col sm={12} md={9} className="products-list">
       {products.map((value, index) => {
+        let price = value.price.toString().split(""),
+          pre = price
+            .splice(1)
+            .join("")
+            .replace(".", ",")
+            .split(","),
+          priceLessThanThousand = value.price
+            .toString()
+            .replace(".", ",")
+            .split(",");
         return (
           <Card
             key={index}
@@ -12,16 +22,67 @@ export default ({ products }) => {
               width: "14rem",
               marginBottom: "1rem",
               marginLeft: "0.5rem",
-              marginRight: "0.5rem"
+              marginRight: "0.5rem",
+              paddingBottom: "5rem"
             }}
           >
             <Card.Img variant="top" src="img/mock.jpeg" />
             <Card.Body>
               <Card.Title>{value.name}</Card.Title>
               <Card.Text>
-                {value.price} {value.curreny}
+                <p className="price-label">
+                  {value.price > 1000 ? (
+                    <React.Fragment>
+                      <span style={{ fontSize: 22 }}>{price[0]}</span>
+                      <span style={{ marginLeft: "6px" }}>
+                        <span style={{ fontSize: 22 }}>{pre[0]}</span>
+                        {","}
+                        {pre[1] ? (
+                          <React.Fragment>
+                            {pre[1].length != 1 ? (
+                              pre[1]
+                            ) : (
+                              <React.Fragment>
+                                {pre[1]}
+                                {"0"}
+                              </React.Fragment>
+                            )}
+                          </React.Fragment>
+                        ) : (
+                          "00"
+                        )}
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span style={{ fontSize: 22 }}>
+                        {priceLessThanThousand[0]}
+                      </span>
+                      {","}
+                      {priceLessThanThousand[1] ? (
+                        <React.Fragment>
+                          {priceLessThanThousand[1].length != 1 ? (
+                            <React.Fragment>
+                              {priceLessThanThousand[1]}
+                            </React.Fragment>
+                          ) : (
+                            <React.Fragment>
+                              {priceLessThanThousand[1]}
+                              {"0"}
+                            </React.Fragment>
+                          )}
+                        </React.Fragment>
+                      ) : (
+                        <React.Fragment>{"00"}</React.Fragment>
+                      )}
+                    </React.Fragment>
+                  )}{" "}
+                  {value.currency}
+                </p>
               </Card.Text>
-              <Button variant="primary">Szczegóły</Button>
+              <Button className="button-link" variant="warning">
+                Szczegóły
+              </Button>
             </Card.Body>
           </Card>
         );

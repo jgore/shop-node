@@ -5,11 +5,10 @@ export default ({ categories }) => {
   return (
     <Col sm={12} md={3} className="category-list">
       <ListGroup>
-        {categories.map((value, index) => (
-          <ListGroup.Item key={index}>
-            {value.name}
-          </ListGroup.Item>
-        ))}
+        {categories.map((value, index) => {
+          console.log(value);
+          return <ListGroup.Item key={index}>{value.name}</ListGroup.Item>;
+        })}
       </ListGroup>
     </Col>
   );
