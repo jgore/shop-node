@@ -48,14 +48,6 @@ class App extends Component {
         <BrowserRouter>
           <Nav />
           <Container>
-<<<<<<< HEAD
-=======
-
-            {this.state.messages.map( message =>{
-             return <div> {message.title} : {message.text}</div>
-            })}
-            
->>>>>>> ec76bb5138bb0f0320034e46f4300ef72d5fcd56
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/account" component={Account} />
