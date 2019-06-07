@@ -1,14 +1,17 @@
-const express = require('express');
+const express = require("express");
 const keys = require("./config/keys");
 const connectToDb = require("./config/connectToDb");
 const app = express();
+const cors = require("cors");
 
-connectToDb(keys.mongoURI)
+connectToDb(keys.mongoURI);
 
-app.get('/', (req, res) => {
-  res.send('Hi there')
-})
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.listen(5000, function () {
-  console.log("shop-node is listening on port 5000")
-})
+require("./routes/pagesRoutes")(app);
+
+app.listen(5000, function() {
+  console.log("shop-node is listening on port 5000");
+});

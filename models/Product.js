@@ -23,6 +23,11 @@ const product = {
   info: {
     type: Array,
     default: []
+  },
+  currency: {
+    type: String,
+    default: "PLN",
+    required: true
   }
 };
 
