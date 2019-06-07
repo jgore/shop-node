@@ -32,7 +32,9 @@
                             "info": [],
                             "currency": "zł"
                         }
-                    ]
+                    ],
+                    "rate": 3.33,
+                    "bought": 12
                 },
                 {
                     "name": "Buty męskie adidas 3MC trampki czarne B22706",
@@ -108,6 +110,7 @@
                     "price": 198,
                     "info": [],
                     "currency": "zł",
+                    "bought": 122,
                     "versions": [
                         {
                             "name": "ADIDAS ORIGINALS 3MC MĘSKIE BUTY TRAMPKI CZARNE",
@@ -135,6 +138,7 @@
                         "mock.jpeg",
                         "mock.jpeg"
                     ],
+                    "bought": 11,
                     "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
                     "price": 198,
                     "info": [],
@@ -173,7 +177,9 @@
                     "description": "MacBook AIR to potężne narzędzie, już po wyjęciu z pudełka gotowe do tworzenia dokumentów, wykonywania obliczeń, prowadzenia prezentacji, edycji zdjęć, produkcji filmów i muzyki. A wszystko dzięki temu, że ma sześć potężnych aplikacji biurowych i twórczych: Pages, Numbers, Keynote, Zdjęcia, iMovie i GarageBand.7 To jednak nie wszystkie fantastyczne aplikacje. Safari, Mail i iBooks to przykłady oprogramowania, które sprawdza się zarówno podczas pracy, jak i odpoczynku. I na tym, oczywiście, nie koniec. W Mac App Store czekają na Ciebie tysiące kolejnych aplikacji.",
                     "price": 2177.0,
                     "info": [],
-                    "currency": "zł"
+                    "currency": "zł",
+                    "bought": 45,
+                    "rate": 5
                 },
                 {
                     "name": "Apple MacBook PRO",

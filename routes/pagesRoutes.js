@@ -19,6 +19,11 @@ module.exports = app => {
       }
       return products;
     };
+
+    const popularProducts = async () => {
+      //popularne produkty
+    }
+
     Promise.all([getCategories(), getProducts()])
       .then(results => {
         res.send({
