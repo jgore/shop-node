@@ -28,6 +28,16 @@ const product = {
     type: String,
     default: "PLN",
     required: true
+  },
+  bought: {
+    type: Number,
+    default: 0,
+    required: true
+  },
+  rate: {
+    type: Number,
+    default: 0,
+    required: true
   }
 };
 

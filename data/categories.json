@@ -92,7 +92,8 @@
                             "info": [],
                             "currency": "zł"
                         }
-                    ]
+                    ],
+                    "rate": 4.22
                 },
                 {
                     "name": "Buty męskie adidas 3MC trampki czarne B22706",
@@ -122,7 +123,8 @@
                             "info": [],
                             "currency": "zł"
                         }
-                    ]
+                    ],
+                    "rate": 5
                 },
                 {
                     "name": "Buty męskie adidas 3MC trampki czarne B22706",
@@ -152,7 +154,8 @@
                             "info": [],
                             "currency": "zł"
                         }
-                    ]
+                    ],
+                    "rate": 2
                 }
             ]
         },
