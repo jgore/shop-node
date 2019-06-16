@@ -38,6 +38,11 @@ const product = {
     type: Number,
     default: 0,
     required: true
+  },
+  visited: {
+    type: Number,
+    default: 0,
+    required: true
   }
 };
 

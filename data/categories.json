@@ -34,7 +34,8 @@
                         }
                     ],
                     "rate": 3.33,
-                    "bought": 12
+                    "bought": 12,
+                    "visited": 12
                 },
                 {
                     "name": "Buty męskie adidas 3MC trampki czarne B22706",
@@ -48,6 +49,7 @@
                     "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
                     "price": 198,
                     "info": [],
+                    "visited": 120,
                     "currency": "zł",
                     "versions": [
                         {
@@ -78,6 +80,7 @@
                     "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
                     "price": 198,
                     "info": [],
+                    "visited": 9,
                     "currency": "zł",
                     "versions": [
                         {
@@ -106,6 +109,7 @@
                         "mock.jpeg",
                         "mock.jpeg"
                     ],
+                    "visited": 1200,
                     "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
                     "price": 198,
                     "info": [],
@@ -142,6 +146,7 @@
                     "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
                     "price": 198,
                     "info": [],
+                    "visited": 56,
                     "currency": "zł",
                     "versions": [
                         {
@@ -179,7 +184,8 @@
                     "info": [],
                     "currency": "zł",
                     "bought": 45,
-                    "rate": 5
+                    "rate": 5,
+                    "visited": 64
                 },
                 {
                     "name": "Apple MacBook PRO",
@@ -191,7 +197,8 @@
                     "description": "Projektując MacBooka Pro z wyświetlaczem Retina, Apple zaczęło od czystej kartki. To dało pełną swobodę projektowania czegoś radykalnie innego. Czegoś, czego jeszcze nie było. I oto jest: notebook tak smukły, tak lekki i tak pełen mocy. Stworzony z myślą o przyszłości, a gotowy do działania już dziś.",
                     "price": 3286.1,
                     "info": [],
-                    "currency": "zł"
+                    "currency": "zł",
+                    "visited": 94
                 }
             ]
         }

@@ -2,9 +2,11 @@ import React from "react";
 import { Col, Card, Button } from "react-bootstrap";
 import ReactStars from "react-stars";
 
-export default ({ products }) => {
+export default props => {
+  const { products, rest } = props;
   return (
-    <Col sm={12} md={9} className="products-list">
+    <Col {...rest} className="products-list">
+      {props.children}
       {products.map((value, index) => {
         let price = value.price.toString().split(""),
           pre = price
