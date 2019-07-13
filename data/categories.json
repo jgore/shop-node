@@ -1,0 +1,100 @@
+{
+    "categories": [
+        {
+            "name": "Korepetycje",
+            "icon": "tshirt",
+            "products": [
+                {
+                    "name": "Kurs programowania Java 00",
+                    "hero_image": "biuro_brillante.jpg",
+                    "photos": [
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg"
+                    ],
+                    "description": "Jeśli chcesz z nami realizować trudniejsze kursy, ale jeszcze brak Ci doświadczenia to jest kurs dla Ciebie. Tutaj zajęcia są 1 na 1 gdzie korepetytor prowadzi Cie kroku po kroku jak zainstalowac IntelliJ, Maven, Git. Jak pracować z JAVA żebyś mógł porobić rzeczy trudniejsze.rampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
+                    "price": 250,
+                    "info": [],
+                    "currency": "zł za 1 tydzień"
+                },
+                {
+                    "name": "Kurs programowania Java 0",
+                    "hero_image": "pawel.jpg",
+                    "photos": [
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg"
+                    ],
+                    "description": "Jeśli stawiasz swoje pierwsze kroki w programowaniu i chciałbyś się nauczyć od najlepszych to jest właśnie kurs dla Ciebie. Tutaj spokojnie uczymy się pracy z IntelliJ, Git, JAVA. Stopniowo podnosimy poziom trudności, abyś mógł zapisać się na kurs Junior",
+                    "price": 999.99,
+                    "info": [],
+                    "visited": 120,
+                    "currency": "zł za 4 tygodnie",
+                    "versions": [
+                        {
+                            "name": "ADIDAS ORIGINALS 3MC MĘSKIE BUTY TRAMPKI CZARNE",
+                            "hero_image": "mock.jpeg",
+                            "photos": [
+                                "mock.jpeg",
+                                "mock.jpeg",
+                                "mock.jpeg",
+                                "mock.jpeg"
+                            ],
+                            "description": "Trampki unisex adidas 3MC Vulc w unikalnym czarnym kolorze. Klasyczne buty miejskie z przewiewnej tkaniny przeznaczone zarówno dla mężczyzn jak i kobiet. Niska cholewka o klasycznym profilu  z wysokiej jakości tkaniny oraz solidna gumowa podeszwa podkreślą kultowy miejski styl. Stylizowane na trampki z lat 80-tych doskonale pasować będą do każdej stylizacji. Solidne obszycia oraz wykończenia pozwolą Ci cieszyć się obuwiem przez długi czas.",
+                            "price": 189.0,
+                            "info": [],
+                            "currency": "zł"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kurs programowania Java 0",
+                    "hero_image": "sala.jpg",
+                    "photos": [
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg"
+                    ],
+                    "description": "Jeśli stawiasz swoje pierwsze kroki w programowaniu i chciałbyś się nauczyć od najlepszych to jest właśnie kurs dla Ciebie. Tutaj spokojnie uczymy się pracy z IntelliJ, Git, JAVA. Stopniowo podnosimy poziom trudności, abyś mógł zapisać się na kurs Junior",
+                    "price": 999.99,
+                    "info": [],
+                    "visited": 120,
+                    "currency": "zł za 4 tygodnie"
+                },
+                {
+                    "name": "Kurs programowania Java 1",
+                    "hero_image": "macbook.jpg",
+                    "photos": [
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg"
+                    ],
+                    "description": "Jeśli stawiasz swoje pierwsze kroki w programowaniu i chciałbyś się nauczyć od najlepszych to jest właśnie kurs dla Ciebie. Tutaj spokojnie uczymy się pracy z IntelliJ, Git, JAVA. Stopniowo podnosimy poziom trudności, abyś mógł zapisać się na kurs Junior",
+                    "price": 1499.99,
+                    "info": [],
+                    "visited": 120,
+                    "currency": "zł za 4 tygodnie"
+                },
+                {
+                    "name": "Kurs programowania Java 1++ ",
+                    "hero_image": "corpo.jpg",
+                    "photos": [
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg",
+                        "mock.jpeg"
+                    ],
+                    "description": "Jeśli stawiasz swoje pierwsze kroki w programowaniu i chciałbyś się nauczyć od najlepszych to jest właśnie kurs dla Ciebie. Tutaj spokojnie uczymy się pracy z IntelliJ, Git, JAVA. Stopniowo podnosimy poziom trudności, abyś mógł zapisać się na kurs Junior",
+                    "price": 1499.99,
+                    "info": [],
+                    "visited": 120,
+                    "currency": "zł za 4 tygodnie"
+                }
+            ]
+        }
+    ]
+}
