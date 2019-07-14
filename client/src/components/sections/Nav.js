@@ -14,9 +14,12 @@ class NavBar extends React.Component {
     return (
       <Navbar
         expand="md"
-        style={{ padding: "1.5rem 1.2rem", borderBottom: "1px solid lightgray" }}
+        style={{
+          padding: "1.5rem 1.2rem",
+          borderBottom: "1px solid lightgray"
+        }}
       >
-        <Container>
+        <Container style={{ maxWidth: 1000 }}>
           <Navbar.Brand>ShopNode</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
