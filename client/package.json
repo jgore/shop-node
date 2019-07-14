@@ -6,11 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-<<<<<<< HEAD
     "axios": "^0.19.0",
-=======
-    "axios": "^0.18.0",
->>>>>>> 747ce452a27b79d4a8e851d9dcc5c95ad8726ae2
     "bootstrap": "^4.3.1",
     "http-proxy-middleware": "^0.19.1",
     "react": "^16.8.6",

@@ -3,21 +3,22 @@ body {
 }
 
 .navbar {
-  font-family: 'Literata', serif !important;
+  font-family: "Literata", serif !important;
 }
 
 .category-list {
   width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  
+  
 }
 .category-container {
   max-width: 900px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
 }
 
 .products-list {
@@ -39,8 +40,27 @@ body {
 }
 .category-list__item {
   font-size: 1.3rem;
-  font-family: 'Literata', serif;
+  font-family: "Literata", serif;
   cursor: pointer;
+  display: inline-block;
+}
+
+.line {
+  height: 2px;
+  top: 0;
+  background: #353535;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.category-list__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.category-container .category-list__item:first-of-type {
+  margin-left: 0;
 }
 
 .button-link {
@@ -87,4 +107,4 @@ body {
   .category-container {
     width: 65%;
   }
-} 
+}
