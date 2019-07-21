@@ -21,10 +21,7 @@ module.exports = app => {
       return products;
     };
 
-    Promise.all([
-      getCategories(),
-      getProducts()
-    ])
+    Promise.all([getCategories(), getProducts()])
       .then(results => {
         res.send({
           categories: results[0],
@@ -36,8 +33,19 @@ module.exports = app => {
       });
   });
 
-  app.get("/api/pages/:category_name/:product_name", (req,res) => {
-    
-  })
-
+  app.get("/api/pages/:product_id", (req, res) => {
+    console.log(req.params.product_id)
+    Product.findOne({
+      _id: req.params.product_id
+    })
+      .then(product => {
+        if (!product) {
+          return res.status(404).send({});
+        }
+        res.send(product);
+      })
+      .catch(err => {
+        res.status(500).send();
+      });
+  });
 };

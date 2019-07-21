@@ -52,7 +52,7 @@ class App extends Component {
             <Route path="/account" component={Account} />
             <Route path="/about" component={About} />
             <Route
-              path="/category/:name/product/:name"
+              path="/product/:product_name"
               component={ProductPage}
             />
           </Switch>
