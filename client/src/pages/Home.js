@@ -3,6 +3,7 @@ import CategoryList from "../components/sections/CategoryList";
 import ProductList from "../components/sections/ProductList";
 import Axios from "axios";
 import { Container, Col, Row } from "react-bootstrap";
+import './Home.css';
 
 class Home extends React.Component {
   state = {
@@ -30,14 +31,14 @@ class Home extends React.Component {
   }
 
   render() {
-    console.log(this.state.categories);
+    console.log(this.state.products);
     return (
       <React.Fragment>
         <CategoryList categories={this.state.categories} />
-        <Container>
+        <Container className='wrapper' fluid={true}>
           <Row>
             <Col
-              sm={{ span: 10, offset: 1 }}
+              sm={{ span: 12 }}
               style={{ backgroundImage: `url('img/banner.jpg')` }}
               className="banner"
             />

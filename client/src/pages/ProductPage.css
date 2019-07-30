@@ -29,3 +29,9 @@
 .product-info * {
     text-align: center;
 }
+
+.product-info__call-action {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 2rem;
+}

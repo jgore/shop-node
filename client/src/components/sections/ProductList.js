@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import ReactStars from "react-stars";
 import getSlug from "speakingurl";
 import Price from "../special/Price";
+import { ShoppingCardConsumer } from "../providers/ShoppingCardProvider";
 
 export default withRouter(props => {
   const { products, rest, history } = props;
@@ -29,7 +30,7 @@ export default withRouter(props => {
                     edit={false}
                   />
                 </p>
-                <Price price={value.price} currency={value.currency} className="price-label"/>
+                <Price price={value.price} currency={value.currency} className="price-label" />
               </Card.Text>
               <Button
                 className="button-link"
@@ -42,6 +43,19 @@ export default withRouter(props => {
               >
                 Szczegóły
               </Button>
+              <ShoppingCardConsumer>
+                {({ state, addProductToShopping }) => (
+                  <Button
+                    variant="primary"
+                    onClick={() =>
+                      addProductToShopping(value)
+                    }
+                  >
+                    Dodaj do koszyka
+                     </Button>
+                )}
+
+              </ShoppingCardConsumer>
             </Card.Body>
           </Card>
         );

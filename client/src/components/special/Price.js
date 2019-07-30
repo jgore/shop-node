@@ -1,19 +1,19 @@
 import React from "react";
 
-export default props => {
-  let price = props.price.toString().split(""),
+export default ({price: rootPrice,className, currency}) => {
+  let price = rootPrice.toString().split(""),
     pre = price
       .splice(1)
       .join("")
       .replace(".", ",")
       .split(","),
-    priceLessThanThousand = props.price
+    priceLessThanThousand = rootPrice
       .toString()
       .replace(".", ",")
       .split(",");
   return (
-    <p className={props.className}>
-      {props.price > 1000 ? (
+    <p className={className}>
+      {rootPrice > 1000 ? (
         <React.Fragment>
           <span style={{ fontSize: 22 }}>{price[0]}</span>
           <span style={{ marginLeft: "6px" }}>
@@ -55,7 +55,7 @@ export default props => {
           )}
         </React.Fragment>
       )}{" "}
-      {props.currency}
+      {currency}
     </p>
   );
 };
