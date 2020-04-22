@@ -1,33 +1,110 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  font-family: "Literata", serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.category-list {
+  width: 100%;
+  
+  
+}
+.category-container {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.products-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.product-image {
+  height: 10rem;
+  margin-bottom: 1rem;
+  width: calc(100% + 2.5rem);
+  margin-left: -1.25rem;
+  margin-top: -1.25rem;
+  background-position: center;
+  background-size: cover;
+}
+.category-list__item {
+  font-size: 1.3rem;
+  font-family: "Literata", serif;
+  cursor: pointer;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.line {
+  height: 2px;
+  top: 0;
+  background: #353535;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.category-list__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.category-container .category-list__item:first-of-type {
+  margin-left: 0;
+}
+
+.button-link {
+  position: absolute;
+  bottom: 20px;
+}
+
+.price-label {
+  position: absolute;
+  bottom: 50px;
+  font-weight: 600;
+}
+
+.card-text {
+}
+
+.rating-label {
+  position: absolute;
+  bottom: 80px;
+}
+
+.banner {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.products-list__item {
+  width: 20%;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-bottom: 6.5rem;
+  min-width: 222px;
+}
+
+@media screen and (max-width: 510px) {
+  .products-list__item {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 575px) and (max-width: 1200px) {
+  .category-container {
+    width: 65%;
   }
 }

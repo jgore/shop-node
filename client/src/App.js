@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import Axios from "axios";
-import { Container } from "react-bootstrap";
 import Nav from "./components/sections/Nav";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Account from "./pages/Account";
+import ProductPage from "./pages/ProductPage";
+import ShoppingCardProvider from "./components/providers/ShoppingCardProvider";
+
 
 class App extends Component {
   constructor(props) {
@@ -46,19 +48,18 @@ class App extends Component {
     return (
       <div>
         <BrowserRouter>
-        <Nav />
-          <Container>
-
-            {this.state.messages.map( message =>{
-             return <div> {message.title} : {message.text}</div>
-            })}
-            
+          <ShoppingCardProvider>
+            <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/account" component={Account} />
               <Route path="/about" component={About} />
+              <Route
+                path="/product/:product_name"
+                component={ProductPage}
+              />
             </Switch>
-          </Container>
+          </ShoppingCardProvider>
         </BrowserRouter>
       </div>
     );
