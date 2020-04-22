@@ -1,11 +1,11 @@
 {
-  "name": "shop-node",
+  "name": "swal-ms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon --inspect index.js",
+    "server": "NODE_ENV=dev nodemon --inspect index.js",
     "client": "cd client && yarn start",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "test": "mocha"
@@ -14,11 +14,15 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.6",
-    "nodemon": "^1.19.0",
-    "react-bootstrap": "^1.0.0-beta.8",
-    "react-router-dom": "^5.0.0"
+    "nodemon": "^1.19.3",
+    "axios": "^0.19.0",
+    "pdfkit": "^0.10.0",
+    "fs": "^0.0.1-security",
+    "csv-parser": "^2.3.2"
   },
   "devDependencies": {
     "mocha": "^6.1.4"

@@ -1,0 +1,38 @@
+version: "3"
+services:
+
+  swap-ms:
+    image: localhost:5000/mps:latest
+    depends_on:
+      - mongo
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 3
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+    ports:
+      - 5001:5001
+      - 9229:9229
+    environment:
+      NODE_ENV: prod
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - mongo-data1:/data/db
+
+
+networks:
+  default:
+
+volumes:
+  mongo-data1:
+
